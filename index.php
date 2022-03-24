@@ -1,10 +1,17 @@
 <?php
 // 1) Conexion
-if ($conexion = new mysqli("192.168.67.2:30714", "root", "root",'nodos')){
+$db_server = "192.168.67.2:30714";
+$db_user = "root";
+$db_pass = "root";
+$db_name = "nodos";
+$mysqli = new \MySQLi($db_server, $db_user, $db_pass, $db_name);
+if ($conexion = $mysqli){
+
+
 echo "<p>MySQL le ha dado permiso a PHP para ejecutar consultas con ese usuario</p>";
 
 // 2) Preparar la orden SQL
-$consulta= "SELECT*FROM nodo WHERE id = 1";
+$consulta= "SELECT*FROM nodo WHERE id=1";
 
 // 3) Ejecutar la orden y obtener datos
 mysqli_select_db($conexion,"nodos");
