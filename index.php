@@ -1,6 +1,6 @@
 <?php
 // 1) Conexión
-if ($conexión = mysqli_connect("192.168.67.2", "root", "root")){
+if ($conexión = mysqli_connect("192.168.67.2:30714", "root", "root")){
 echo "<p>MySQL le ha dado permiso a PHP para ejecutar consultas con ese usuario</p>";
 
 // 2) Preparar la orden SQL
