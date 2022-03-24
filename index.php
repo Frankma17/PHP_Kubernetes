@@ -18,3 +18,4 @@ echo "-"; // un separador
 echo $fila["nombre"];
 echo "</p>";
 }
+?>
