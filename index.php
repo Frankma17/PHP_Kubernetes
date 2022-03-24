@@ -4,7 +4,7 @@ $db_server = "192.168.67.2:30714";
 $db_user = "root";
 $db_pass = "root";
 $db_name = "nodos";
-$mysqli = new \MySQLi($db_server, $db_user, $db_pass, $db_name);
+$mysqli = new mysqli($db_server, $db_user, $db_pass, $db_name);
 if ($conexion = $mysqli){
 
 
