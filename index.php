@@ -12,7 +12,7 @@ $datos= mysql_query ($conexion,$consulta);
 
 // 4) Ir Imprimiendo las filas resultantes
 while ($fila =mysql_fetch_array($datos)){
-echo "<p">;
+echo "<p>";
 echo $fila ["id"];
 echo "-"; // un separador
 echo $fila["nombre"];
